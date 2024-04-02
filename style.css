@@ -8,14 +8,16 @@ html{
 }
 /*all header items start here*/
 header{
+background: black;
+color: white;
   border-bottom: 1px solid rgba(128, 128, 128, 0.247);
   padding: 5px;
 }
 h1{
   position: absolute;
-  left: 115px;
+  left: 135px;
   font-size: 25px;
-  color: black;
+  color: white;
   font-family: "Madimi One", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -34,23 +36,18 @@ h1{
   padding: 10px;
   cursor: pointer;
 }
-.manu{
-  margin: 10px;
-  font-family: "Madimi One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+
 .manu ul{
 list-style: none;
 }
 .manu a:hover{
-  background-color: black;
-  color: white;
+  
+  color: palegreen;
   border-radius: 4px;
 }
 .manu a{
  text-decoration: none;
- color: black;
+ color: white;
 }
 /*all header items end here*/
 /*start search here*/
@@ -107,22 +104,7 @@ ol, ul {
  display: block;
 }
 /*big post start here*/
-.see-more{
-  text-align: center;
-  border: 1px solid rgba(128, 128, 128, 0.719);
-  border-radius: 5px;
-  max-width: 284px;
-  height: auto;
-  margin: 0 auto;
-  display: block;
-}
-.see-more a{
-  text-decoration: none;
-  color: black;
-  font-family: "Istok Web", sans-serif;
-font-weight: 400;
-font-style: normal;
-}
+
 #editors{
   text-decoration: underline;
   padding-left: 5px;
@@ -131,6 +113,9 @@ font-style: normal;
   font-weight: 400;
   font-style: normal;
   margin-top: 8px
+}
+.editor{
+    text-align: center;
 }
 .banner-card{
   position: relative;
@@ -164,23 +149,6 @@ font-style: normal;
   width: 0;
 }
 /*big post end here*/
-/*all categories below start here*/
-.below-chart {
-  display: flex;
-  gap: 5rem;
-  margin-left: 11px;
-  margin-top: 10px;
-  font-family: "Madimi One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.below-chart a{
-  text-decoration: none;
-  color: black;
-}
-.below-chart ul{
-  list-style: none;
-}
 #described{
     padding: 10px;
 }
@@ -192,15 +160,11 @@ display: block;
   padding: 6px; 
   border-radius: 20px;
 }
-.para-house a{
-    text-decoration: none;
-    color: black;
-}
-.para-house ul{
-list-style: none;
+.para-house{
 font-family: "Istok Web", sans-serif;
 font-weight: 400;
 font-style: normal;
+padding: 10px;
 }
 #btn {
 text-align: center;
@@ -209,6 +173,7 @@ text-align: center;
 #btn button{
   padding: 10px;
   border-radius: 8px; 
+  border: none;
 }
 #btn button:hover{
   background: darkcyan; 
@@ -219,24 +184,21 @@ text-align: center;
 footer{
 text-align: center;
 padding: 8px;
-background-color: rgba(175, 166, 155, 0.096);
+color: white;
+background: #83969d;
 font-family: "Istok Web", sans-serif;
 font-weight: 400;
 font-style: normal;
 }
 .fa-brands{
-  color: black;
+  color: white;
 }
 /*footer end here*/
 @media screen and (min-width:320px) {
   .below-chart {
-   margin-left: 25px;
+   margin-left: 10px;
   }
-  .see-more{
-   padding: 2px;
-    max-width: 314px;
-    height: auto;
-  }
+  
 }
 @media screen and (min-width:375px) {
   .below-chart {
@@ -245,11 +207,7 @@ font-style: normal;
   .below-chart ul{
     margin: 12px;
   }
-  .see-more{
-   padding: 2px;
-   max-width: 360px;
-   height: auto;
-  }
+  
   header h1{
     left: 146px;
   }
@@ -260,24 +218,14 @@ font-style: normal;
   .below-chart ul{
     margin: 31px;
   }
-  .see-more{
-   padding: 2px;
-   max-width: 412px;
-   height: auto;
-  }
+  
   header h1{
     left: 174px;
   }
 }
 @media screen and (min-width:768px) {
  
-  .see-more{
-   padding: 2px;
-   max-width: 412px;
-   height: auto;
-   margin-right: 22rem;
-
-  }
+  
   header h1{
     left: 336px;
   }
